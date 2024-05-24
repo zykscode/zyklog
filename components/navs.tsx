@@ -9,7 +9,7 @@ const Navs = () => {
     <nav className="nav-header-rhs breadcrumbs">
       {headerNavLinks.map((nav) => {
         return (
-          <Link className="breadcrumb button capitalize" key={nav.title} href={`/${nav.title}`}>
+          <Link className="breadcrumb button capitalize" key={nav.title} href={nav.href}>
             {nav.title}
           </Link>
         )

@@ -12,10 +12,13 @@ const siteMetadata = {
   socialBanner: '/static/images/twitter-card.png',
   mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'zykweblog@gmail.com',
-  x: 'https://twitter.com/zykson',
-  // twitter: 'https://twitter.com/Twitter',
-  youtube: 'https://youtube.com/zyk',
-  linkedin: 'https://www.linkedin.com/zyk',
+  link: {
+    x: 'https://twitter.com/zykson',
+    github: '',
+    twitter: 'https://twitter.com/Twitter',
+    youtube: 'https://youtube.com/zyk',
+    linkedin: 'https://www.linkedin.com/zyk',
+  },
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the

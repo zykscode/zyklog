@@ -2,7 +2,7 @@
 
 import { useTheme } from 'next-themes'
 import { Button } from './ui/button'
-
+import { IoMoon } from 'react-icons/io5'
 const Sun = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -18,16 +18,16 @@ const Sun = ({ className }) => (
   </svg>
 )
 
-const Moon = ({ className }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 20 20"
-    fill="currentColor"
-    className={className}
-  >
-    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
-  </svg>
-)
+// const Moon = ({ className }) => (
+//   <svg
+//     xmlns="http://www.w3.org/2000/svg"
+//     viewBox="0 0 20 20"
+//     fill="currentColor"
+//     className={className}
+//   >
+//     <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+//   </svg>
+// )
 
 export function ModeToggle() {
   const { setTheme, theme } = useTheme()
@@ -41,7 +41,7 @@ export function ModeToggle() {
     >
       <span className="sr-only">Toggle mode</span>
       <Sun className="rotate-0 scale-0 transition-all duration-500 dark:-rotate-90 dark:scale-[1.75] md:h-12 md:w-12 md:dark:scale-110" />
-      <Moon className="absolute rotate-0 scale-100 transition-all duration-500 dark:-rotate-90 dark:scale-0 md:h-4 md:w-4" />
+      <IoMoon className="scale-10 absolute rotate-0 transition-all duration-500 dark:-rotate-90 dark:scale-0 md:h-4 md:w-4" />
     </Button>
   )
 }
