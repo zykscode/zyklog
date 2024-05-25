@@ -4,7 +4,7 @@ import Navs from './navs'
 const Header = () => {
   return (
     <header className="header">
-      <div className="nav-header">
+      <div className="nav-header   ">
         <Breadcrumbs />
         <Navs />
       </div>
